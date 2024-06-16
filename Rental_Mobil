@@ -26,3 +26,8 @@ class Penyewaan:
 
     def __repr__(self):
         return f"ID Sewa: {self.id_sewa}, ID Mobil: {self.id_mobil}, Nama Penyewa: {self.nama_penyewa}, Tanggal Sewa: {self.tanggal_sewa}"
+
+class SistemRental:
+    def __init__(self):
+        self.daftar_mobil = []
+        self.daftar_sewa = []
