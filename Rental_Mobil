@@ -62,3 +62,16 @@ class SistemRental:
             for j in range(0, n-i-1):
                 if self.daftar_mobil[j].harga_sewa > self.daftar_mobil[j+1].harga_sewa:
                     self.daftar_mobil[j], self.daftar_mobil[j+1] = self.daftar_mobil[j+1], self.daftar_mobil[j]
+
+    def binary_search_by_id(self, id_mobil):
+        self.daftar_mobil.sort(key=lambda x: x.id_mobil)  # Pastikan daftar sudah terurut
+        low, high = 0, len(self.daftar_mobil) - 1
+        while low <= high:
+            mid = (low + high) // 2
+            if self.daftar_mobil[mid].id_mobil == id_mobil:
+                return self.daftar_mobil[mid]
+            elif self.daftar_mobil[mid].id_mobil < id_mobil:
+                low = mid + 1
+            else:
+                high = mid - 1
+        return None
