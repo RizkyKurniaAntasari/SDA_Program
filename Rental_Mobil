@@ -101,3 +101,6 @@ def tampilkan_menu():
     print("8. Lihat Daftar Penyewaan")
     print("0. Keluar")
     print("===========================")
+
+def main():
+    sistem_rental = SistemRental()
