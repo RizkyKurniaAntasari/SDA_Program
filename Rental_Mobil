@@ -145,3 +145,8 @@ def main():
                 print("Mobil berhasil diupdate!")
             else:
                 print("Mobil dengan ID tersebut tidak ditemukan.")
+
+        elif pilihan == '4':
+            id_mobil = int(input("Masukkan ID Mobil yang akan dihapus: "))
+            sistem_rental.hapus_mobil(id_mobil)
+            print("Mobil berhasil dihapus!")
