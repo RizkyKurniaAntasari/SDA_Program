@@ -4,6 +4,7 @@ Nama : Rizky Kurnia Antasari       2357051011
        Muhammad Alvin              2317051040
 '''
 
+#<---------------------------------------[ C L A S S ]--------------------------------------->
 class Mobil:
     def __init__(self, id_mobil, merk, model, tahun, harga_sewa, tersedia=True):
         self.id_mobil = id_mobil
@@ -12,21 +13,23 @@ class Mobil:
         self.tahun = tahun
         self.harga_sewa = harga_sewa
         self.tersedia = tersedia
-
+    
     def __repr__(self):
         status = "Tersedia" if self.tersedia else "Disewa"
         return f"{self.id_mobil}: {self.merk} {self.model} ({self.tahun}) - {self.harga_sewa}/hari [{status}]"
 
+#<---------------------------------------[ R E N T  C L A S S ]--------------------------------------->
 class Penyewaan:
     def __init__(self, id_sewa, id_mobil, nama_penyewa, tanggal_sewa):
         self.id_sewa = id_sewa
         self.id_mobil = id_mobil
         self.nama_penyewa = nama_penyewa
         self.tanggal_sewa = tanggal_sewa
-
+    
     def __repr__(self):
         return f"ID Sewa: {self.id_sewa}, ID Mobil: {self.id_mobil}, Nama Penyewa: {self.nama_penyewa}, Tanggal Sewa: {self.tanggal_sewa}"
 
+#<---------------------------------------[ R E N T  C L A S S  S Y S T E M ]--------------------------------------->
 class SistemRental:
     def __init__(self):
         self.daftar_mobil = []
@@ -89,6 +92,7 @@ class SistemRental:
         for sewa in self.daftar_sewa:
             print(sewa)
 
+#<---------------------------------------[ M E N U  F U N C T I O N ]--------------------------------------->
 def tampilkan_menu():
     print("\n=== Sistem Rental Mobil ===")
     print("1. Tambah Mobil")
@@ -102,13 +106,14 @@ def tampilkan_menu():
     print("0. Keluar")
     print("===========================")
 
+#<---------------------------------------[ M A I N  F U N C T I O N ]--------------------------------------->
 def main():
     sistem_rental = SistemRental()
-
+    
     while True:
         tampilkan_menu()
         pilihan = input("Pilih opsi: ")
-
+        
         if pilihan == '1':
             id_mobil = int(input("Masukkan ID Mobil: "))
             merk = input("Masukkan Merk Mobil: ")
@@ -118,7 +123,3 @@ def main():
             mobil = Mobil(id_mobil, merk, model, tahun, harga_sewa)
             sistem_rental.tambah_mobil(mobil)
             print("Mobil berhasil ditambahkan!")
-
-        elif pilihan == '2':
-            print("\nDaftar Mobil:")
-            sistem_rental.lihat_mobil()
