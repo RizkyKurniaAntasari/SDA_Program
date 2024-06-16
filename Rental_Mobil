@@ -185,4 +185,8 @@ def main():
         else:
             print("Pilihan tidak valid, silakan coba lagi.")
 
+# fungsi utama
+if __name__ == "__main__":
+    main()
+
         
