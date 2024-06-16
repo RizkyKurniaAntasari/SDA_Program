@@ -174,4 +174,15 @@ def main():
             else:
                 print("Mobil tidak tersedia atau tidak ditemukan.")
 
+        elif pilihan == '8':
+            print("\nDaftar Penyewaan:")
+            sistem_rental.lihat_penyewaan()
+        
+        elif pilihan == '0':
+            print("Terima kasih telah menggunakan sistem rental mobil!")
+            break
+        
+        else:
+            print("Pilihan tidak valid, silakan coba lagi.")
+
         
