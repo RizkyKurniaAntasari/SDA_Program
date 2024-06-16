@@ -38,3 +38,17 @@ class SistemRental:
     def lihat_mobil(self):
         for mobil in self.daftar_mobil:
             print(mobil)
+
+    def update_mobil(self, id_mobil, merk=None, model=None, tahun=None, harga_sewa=None):
+        for mobil in self.daftar_mobil:
+            if mobil.id_mobil == id_mobil:
+                if merk:
+                    mobil.merk = merk
+                if model:
+                    mobil.model = model
+                if tahun:
+                    mobil.tahun = tahun
+                if harga_sewa:
+                    mobil.harga_sewa = harga_sewa
+                return mobil
+        return None
