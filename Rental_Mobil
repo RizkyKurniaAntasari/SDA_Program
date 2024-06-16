@@ -52,3 +52,6 @@ class SistemRental:
                     mobil.harga_sewa = harga_sewa
                 return mobil
         return None
+
+    def hapus_mobil(self, id_mobil):
+        self.daftar_mobil = [mobil for mobil in self.daftar_mobil if mobil.id_mobil != id_mobil]
