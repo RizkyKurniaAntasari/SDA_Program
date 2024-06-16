@@ -104,3 +104,7 @@ def tampilkan_menu():
 
 def main():
     sistem_rental = SistemRental()
+
+    while True:
+        tampilkan_menu()
+        pilihan = input("Pilih opsi: ")
