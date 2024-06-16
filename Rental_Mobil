@@ -150,3 +150,7 @@ def main():
             id_mobil = int(input("Masukkan ID Mobil yang akan dihapus: "))
             sistem_rental.hapus_mobil(id_mobil)
             print("Mobil berhasil dihapus!")
+
+        elif pilihan == '5':
+            sistem_rental.bubble_sort_by_harga()
+            print("Mobil berhasil disortir berdasarkan harga sewa!")
