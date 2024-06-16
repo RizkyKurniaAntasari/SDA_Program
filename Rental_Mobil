@@ -75,3 +75,16 @@ class SistemRental:
             else:
                 high = mid - 1
         return None
+
+    def sewa_mobil(self, id_sewa, id_mobil, nama_penyewa, tanggal_sewa):
+        mobil = self.binary_search_by_id(id_mobil)
+        if mobil and mobil.tersedia:
+            mobil.tersedia = False
+            sewa = Penyewaan(id_sewa, id_mobil, nama_penyewa, tanggal_sewa)
+            self.daftar_sewa.append(sewa)
+            return sewa
+        return None
+
+     def lihat_penyewaan(self):
+        for sewa in self.daftar_sewa:
+            print(sewa)
