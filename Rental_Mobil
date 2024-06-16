@@ -108,3 +108,13 @@ def main():
     while True:
         tampilkan_menu()
         pilihan = input("Pilih opsi: ")
+
+        if pilihan == '1':
+            id_mobil = int(input("Masukkan ID Mobil: "))
+            merk = input("Masukkan Merk Mobil: ")
+            model = input("Masukkan Model Mobil: ")
+            tahun = int(input("Masukkan Tahun Mobil: "))
+            harga_sewa = int(input("Masukkan Harga Sewa Mobil per Hari: "))
+            mobil = Mobil(id_mobil, merk, model, tahun, harga_sewa)
+            sistem_rental.tambah_mobil(mobil)
+            print("Mobil berhasil ditambahkan!")
