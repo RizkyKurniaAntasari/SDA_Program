@@ -118,3 +118,7 @@ def main():
             mobil = Mobil(id_mobil, merk, model, tahun, harga_sewa)
             sistem_rental.tambah_mobil(mobil)
             print("Mobil berhasil ditambahkan!")
+
+        elif pilihan == '2':
+            print("\nDaftar Mobil:")
+            sistem_rental.lihat_mobil()
