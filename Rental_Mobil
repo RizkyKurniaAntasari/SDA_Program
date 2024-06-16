@@ -12,3 +12,7 @@ class Mobil:
         self.tahun = tahun
         self.harga_sewa = harga_sewa
         self.tersedia = tersedia
+
+    def __repr__(self):
+        status = "Tersedia" if self.tersedia else "Disewa"
+        return f"{self.id_mobil}: {self.merk} {self.model} ({self.tahun}) - {self.harga_sewa}/hari [{status}]"
