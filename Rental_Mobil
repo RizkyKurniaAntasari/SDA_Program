@@ -84,3 +84,7 @@ class SistemRental:
             self.daftar_sewa.append(sewa)
             return sewa
         return None
+
+    def lihat_penyewaan(self):
+        for sewa in self.daftar_sewa:
+            print(sewa)
