@@ -154,3 +154,13 @@ def main():
         elif pilihan == '5':
             sistem_rental.bubble_sort_by_harga()
             print("Mobil berhasil disortir berdasarkan harga sewa!")
+
+        elif pilihan == '6':
+            id_mobil = int(input("Masukkan ID Mobil yang dicari: "))
+            hasil_pencarian = sistem_rental.binary_search_by_id(id_mobil)
+            if hasil_pencarian:
+                print(f"Mobil ditemukan: {hasil_pencarian}")
+            else:
+                print("Mobil dengan ID tersebut tidak ditemukan.")
+
+        
