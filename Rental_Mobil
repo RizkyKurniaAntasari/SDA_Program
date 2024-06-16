@@ -163,4 +163,15 @@ def main():
             else:
                 print("Mobil dengan ID tersebut tidak ditemukan.")
 
+        elif pilihan == '7':
+            id_sewa = int(input("Masukkan ID Sewa: "))
+            id_mobil = int(input("Masukkan ID Mobil yang akan disewa: "))
+            nama_penyewa = input("Masukkan Nama Penyewa: ")
+            tanggal_sewa = input("Masukkan Tanggal Sewa (YYYY-MM-DD): ")
+            sewa = sistem_rental.sewa_mobil(id_sewa, id_mobil, nama_penyewa, tanggal_sewa)
+            if sewa:
+                print("Mobil berhasil disewa!")
+            else:
+                print("Mobil tidak tersedia atau tidak ditemukan.")
+
         
