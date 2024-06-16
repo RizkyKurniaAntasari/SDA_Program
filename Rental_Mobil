@@ -127,3 +127,21 @@ def main():
         elif pilihan == '2':
             print("\nDaftar Mobil:")
             sistem_rental.lihat_mobil()
+
+        elif pilihan == '3':
+            id_mobil = int(input("Masukkan ID Mobil yang akan diupdate: "))
+            merk = input("Masukkan Merk Baru (kosongkan jika tidak ingin mengubah): ")
+            model = input("Masukkan Model Baru (kosongkan jika tidak ingin mengubah): ")
+            tahun = input("Masukkan Tahun Baru (kosongkan jika tidak ingin mengubah): ")
+            harga_sewa = input("Masukkan Harga Sewa Baru (kosongkan jika tidak ingin mengubah): ")
+            
+            merk = merk if merk else None
+            model = model if model else None
+            tahun = int(tahun) if tahun else None
+            harga_sewa = int(harga_sewa) if harga_sewa else None
+            
+            updated_mobil = sistem_rental.update_mobil(id_mobil, merk, model, tahun, harga_sewa)
+            if updated_mobil:
+                print("Mobil berhasil diupdate!")
+            else:
+                print("Mobil dengan ID tersebut tidak ditemukan.")
