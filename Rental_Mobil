@@ -1,0 +1,14 @@
+'''
+Nama : Rizky Kurnia Antasari
+       Ilham Kurniawan
+       Muhammad Alvin  
+'''
+
+class Mobil:
+    def __init__(self, id_mobil, merk, model, tahun, harga_sewa, tersedia=True):
+        self.id_mobil = id_mobil
+        self.merk = merk
+        self.model = model
+        self.tahun = tahun
+        self.harga_sewa = harga_sewa
+        self.tersedia = tersedia
