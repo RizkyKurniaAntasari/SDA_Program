@@ -88,3 +88,16 @@ class SistemRental:
     def lihat_penyewaan(self):
         for sewa in self.daftar_sewa:
             print(sewa)
+
+def tampilkan_menu():
+    print("\n=== Sistem Rental Mobil ===")
+    print("1. Tambah Mobil")
+    print("2. Lihat Daftar Mobil")
+    print("3. Update Mobil")
+    print("4. Hapus Mobil")
+    print("5. Sortir Mobil berdasarkan Harga Sewa")
+    print("6. Cari Mobil berdasarkan ID")
+    print("7. Sewa Mobil")
+    print("8. Lihat Daftar Penyewaan")
+    print("0. Keluar")
+    print("===========================")
