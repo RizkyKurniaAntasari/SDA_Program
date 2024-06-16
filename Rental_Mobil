@@ -34,3 +34,7 @@ class SistemRental:
 
     def tambah_mobil(self, mobil):
         self.daftar_mobil.append(mobil)
+
+    def lihat_mobil(self):
+        for mobil in self.daftar_mobil:
+            print(mobil)
