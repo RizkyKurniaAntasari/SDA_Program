@@ -31,3 +31,6 @@ class SistemRental:
     def __init__(self):
         self.daftar_mobil = []
         self.daftar_sewa = []
+
+    def tambah_mobil(self, mobil):
+        self.daftar_mobil.append(mobil)
