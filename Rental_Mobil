@@ -231,6 +231,6 @@ def main():
         else:
             print("Pilihan tidak valid, silakan coba lagi.")
 
-# fungsi utama
+#<---------------------------------------[ I N T  M A I N ]--------------------------------------->
 if __name__ == "__main__":
     main()
