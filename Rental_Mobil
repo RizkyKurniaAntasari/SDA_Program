@@ -94,6 +94,13 @@ class SistemRental:
         for sewa in self.daftar_sewa:
             print(sewa)
 
+    def ekspor_data(self, mobil_file='mobil.csv', sewa_file='sewa.csv'):
+        with open(mobil_file, mode='w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(['ID Mobil', 'Merk', 'Model', 'Tahun', 'Harga Sewa', 'Tersedia'])
+            for mobil in self.daftar_mobil:
+                writer.writerow([mobil.id_mobil, mobil.merk, mobil.model, mobil.tahun, mobil.harga_sewa, mobil.tersedia])
+
 #<---------------------------------------[ M E N U  F U N C T I O N ]--------------------------------------->
 def tampilkan_menu():
     print("\n=== Sistem Rental Mobil ===")
