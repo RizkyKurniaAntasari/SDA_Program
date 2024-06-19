@@ -219,6 +219,10 @@ def main():
         elif pilihan == '9':
             sistem_rental.ekspor_data()
             print("Data berhasil diekspor ke CSV!")
+
+        elif pilihan == '10':
+            sistem_rental.impor_data()
+            print("Data berhasil diimpor dari CSV!")
         
         elif pilihan == '0':
             print("Terima kasih telah menggunakan sistem rental mobil!")
