@@ -130,6 +130,8 @@ def tampilkan_menu():
     print("6. Cari Mobil berdasarkan ID")
     print("7. Sewa Mobil")
     print("8. Lihat Daftar Penyewaan")
+    print("9. Ekspor Data ke CSV")
+    print("10. Impor Data dari CSV")
     print("0. Keluar")
     print("===========================")
 
