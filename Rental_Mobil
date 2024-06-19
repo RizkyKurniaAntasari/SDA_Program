@@ -109,6 +109,16 @@ class SistemRental:
             for sewa in self.daftar_sewa:
                 writer.writerow([sewa.id_sewa, sewa.id_mobil, sewa.nama_penyewa, sewa.tanggal_sewa])
 
+    def impor_data(self, mobil_file='mobil.csv', sewa_file='sewa.csv'):
+        try:
+            with open(mobil_file, mode='r') as file:
+                reader = csv.DictReader(file)
+                self.daftar_mobil = []
+                for row in reader:
+                    mobil = Mobil(int(row['ID Mobil']), row['Merk'], row['Model'], int(row['Tahun']), int(row['Harga Sewa']), row['Tersedia'] == 'True')
+                    self.daftar_mobil.append(mobil)
+
+
 #<---------------------------------------[ M E N U  F U N C T I O N ]--------------------------------------->
 def tampilkan_menu():
     print("\n=== Sistem Rental Mobil ===")
