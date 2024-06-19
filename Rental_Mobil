@@ -215,6 +215,10 @@ def main():
         elif pilihan == '8':
             print("\nDaftar Penyewaan:")
             sistem_rental.lihat_penyewaan()
+
+        elif pilihan == '9':
+            sistem_rental.ekspor_data()
+            print("Data berhasil diekspor ke CSV!")
         
         elif pilihan == '0':
             print("Terima kasih telah menggunakan sistem rental mobil!")
