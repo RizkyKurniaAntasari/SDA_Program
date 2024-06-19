@@ -1,0 +1,51 @@
+ID Mobil,Merk,Model,Tahun,Harga Sewa,Tersedia
+1,Honda,Brio,2000,120000,True
+2,Honda,Civic,2022,9000000,True
+3,Toyota,Avanza,2018,300000,True
+4,Toyota,Innova,2019,400000,True
+5,Suzuki,Swift,2021,500000,True
+6,Honda,HR-V,2017,350000,True
+7,Toyota,Yaris,2016,250000,True
+8,Nissan,X-Trail,2020,600000,True
+9,Mitsubishi,Pajero,2015,700000,True
+10,Isuzu,Elf,2014,200000,True
+11,Honda,Jazz,2013,180000,True
+12,Toyota,Fortuner,2023,1200000,True
+13,Mazda,CX-5,2019,450000,True
+14,Kia,Picanto,2017,280000,True
+15,Hyundai,Creta,2021,550000,True
+16,Subaru,Forester,2016,380000,True
+17,Ford,EcoSport,2018,320000,True
+18,Chevrolet,Spark,2015,200000,True
+19,BMW,X5,2020,1100000,True
+20,Audi,Q7,2022,1400000,True
+21,Mercedes-Benz,C-Class,2021,900000,True
+22,Volvo,XC60,2019,800000,True
+23,Lexus,RX,2017,750000,True
+24,Jeep,Wrangler,2016,650000,True
+25,Peugeot,3008,2014,300000,True
+26,Renault,Kwid,2018,180000,True
+27,Skoda,Kodiaq,2023,1000000,True
+28,Tata,Nexon,2021,400000,True
+29,Mini,Cooper,2015,600000,True
+30,Fiat,500,2012,150000,True
+31,Opel,Corsa,2017,220000,True
+32,Dacia,Duster,2019,260000,True
+33,Seat,Arona,2020,480000,True
+34,Land Rover,Discovery,2018,850000,True
+35,Jaguar,F-Pace,2021,1300000,True
+36,Maserati,Levante,2019,1600000,True
+37,Porsche,Cayenne,2017,1400000,True
+38,Lamborghini,Urus,2022,3000000,True
+39,Ferrari,F8 Tributo,2023,5000000,True
+40,Bentley,Bentayga,2016,2500000,True
+41,Rolls-Royce,Ghost,2015,4000000,True
+42,Mclaren,720S,2020,6000000,True
+43,Aston Martin,DB11,2018,3500000,True
+44,Tesla,Model S,2019,7000000,True
+45,Alfa Romeo,Stelvio,2017,850000,True
+46,Lotus,Evora,2016,1200000,True
+47,Bugatti,Chiron,2021,15000000,True
+48,Koenigsegg,Regera,2018,20000000,True
+49,Pagani,Huayra,2019,25000000,True
+50,Lancia,Dedra,1995,100000,True
