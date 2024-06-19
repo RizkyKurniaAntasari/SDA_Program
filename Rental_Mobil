@@ -109,6 +109,15 @@ class SistemRental:
             for sewa in self.daftar_sewa:
                 writer.writerow([sewa.id_sewa, sewa.id_mobil, sewa.nama_penyewa, sewa.tanggal_sewa])
 
+        with open(sewa_file, mode='r') as file:
+                reader = csv.DictReader(file)
+                self.daftar_sewa = []
+                for row in reader:
+                    sewa = Penyewaan(int(row['ID Sewa']), int(row['ID Mobil']), row['Nama Penyewa'], row['Tanggal Sewa'])
+                    self.daftar_sewa.append(sewa)
+        except FileNotFoundError:
+            print("File CSV tidak ditemukan.")
+
     def impor_data(self, mobil_file='mobil.csv', sewa_file='sewa.csv'):
         try:
             with open(mobil_file, mode='r') as file:
